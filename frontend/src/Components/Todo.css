@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* FULL PAGE CENTERING */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 24px;
+}
+
+/* MAIN CONTAINER */
+.app-shell {
+  width: 100%;
+  max-width: 720px;
+  height: 80vh;
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header h1 {
+  font-size: 22px;
+}
+
+.header p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ADD TODO */
+.add-todo {
+  display: flex;
+  gap: 8px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-todo button {
+  padding: 10px 16px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SEARCH */
+.search {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* LIST */
+.todo-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 4px;
+}
+
+/* ITEM */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.todo-item button {
+  background: none;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+}
+
+/* STATES */
+.status {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
