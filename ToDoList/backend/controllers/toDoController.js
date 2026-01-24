@@ -9,7 +9,7 @@ export const createTodo = async (req, res) => {
   const todo = await Todo.create({
     title: req.body.title
   });
-  res.status(201).json(todo);
+  res.status(201).json(tAodo);
 };
 
 export const deleteTodo = async (req, res) => {
