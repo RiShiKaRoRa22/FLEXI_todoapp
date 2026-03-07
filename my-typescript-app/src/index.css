@@ -46,8 +46,15 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+.button1{
+  background-color:hsl(0, 36%, 36%);
+  color:lab(94.2% 2.02 0.7);
+  text-align: centre
+}
 button:hover {
-  border-color: #646cff;
+  border-color: #64ffac;
+  background-color: #183425;
 }
 button:focus,
 button:focus-visible {
